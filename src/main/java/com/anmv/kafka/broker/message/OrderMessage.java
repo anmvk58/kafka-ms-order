@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.kafka.clients.consumer.OffsetAndMetadata;
+import java.time.OffsetDateTime;
 
 @Setter
 @Getter
@@ -20,7 +20,7 @@ public class OrderMessage {
     private String creditCardNumber;
 
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ")
-    private OffsetAndMetadata orderDateTime;
+    private OffsetDateTime orderDateTime;
 
     private String itemName;
 
